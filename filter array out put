@@ -1,0 +1,71 @@
+const characters = [
+    {
+        name: 'Luke Skywalker',
+        height: '172',
+        mass: '77',
+        eye_color: 'blue',
+        gender: 'male',
+    },
+    {
+        name: 'Darth Vader',
+        height: '202',
+        mass: '136',
+        eye_color: 'yellow',
+        gender: 'male',
+    },
+    {
+        name: 'Leia Organa',
+        height: '150',
+        mass: '49',
+        eye_color: 'brown',
+        gender: 'female',
+    },
+    {
+        name: 'Anakin Skywalker',
+        height: '188',
+        mass: '84',
+        eye_color: 'blue',
+        gender: 'male',
+    },
+];
+//1=> Get characters with mass greater than 100
+const newOne =characters.map(character =>character.mass)
+const newOp =newOne.filter(value=>value>100)
+console.log(newOp)
+
+ 
+
+//2=>Get characters with height less than 200
+
+ 
+
+const newGig =characters.map(character =>character.height)
+const newGig1= newGig.filter(value=> value<200)
+console.log(newGig1)
+
+ 
+
+ 
+
+//3=>Get all male characters
+const newGi= characters.map(character=>character.gender)
+const newGen =newGi.filter(value=>value === 'male')
+console.log(newGen)
+
+ 
+
+ 
+
+//4=>Get all female characters
+const newGis= characters.map(character=>character.gender)
+const newGenF =newGis.filter(value=>value === 'female')
+console.log(newGenF)
+
+
+
+//--->OUtput
+
+[ '136' ]
+[ '172', '150', '188' ]
+[ 'male', 'male', 'male' ]
+[ 'female' ]
